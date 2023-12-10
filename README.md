@@ -33,14 +33,17 @@ First of all, open terminal and then:
    ```bash
    git clone https://github.com/your-username/post-blog.git
 2. Go into the project directory:
+    ```bash
    cd post-blog
-3. Install dependencies:
+4. Install dependencies:
+   ```bash
    npm install
-4. Start the development server:
+6. Start the development server:
+   ```bash
    node app.js
-5. After that in your console you will see message:
+8. After that in your console you will see message:
    "Server is running on port 3000"
-6. Navigate in your browser to this link:
+9. Navigate in your browser to this link:
    http://localhost:3000
 Finally you will see page that looks loke this:
 ![image](https://github.com/Academicpower/post-blog/assets/153085335/a2d18ddf-9dd6-4376-9017-feb8f6805fc8)
