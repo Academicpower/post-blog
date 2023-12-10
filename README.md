@@ -42,9 +42,13 @@ First of all, open terminal and then:
    ```bash
    node app.js
 8. After that in your console you will see message:
+   ```bash
    "Server is running on port 3000"
-9. Navigate in your browser to this link:
+10. Navigate in your browser to this link:
+
    http://localhost:3000
+
+
 Finally you will see page that looks loke this:
 ![image](https://github.com/Academicpower/post-blog/assets/153085335/a2d18ddf-9dd6-4376-9017-feb8f6805fc8)
 
