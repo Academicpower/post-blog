@@ -1,0 +1,253 @@
+body {
+    font-family: 'Open Sans', arial, sans-serif;
+    color: #333;
+    font-size: 14px;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+/* Add a scroll bar for screens smaller than 1200px */
+@media (max-width: 1200px) {
+    body {
+        overflow: auto;
+    }
+}
+
+.header {
+    background-color: #d9e0e7;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.header-text {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.post-container {
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 60%;
+}
+
+.post {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    font-size: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.post:hover {
+    box-shadow: 0 34px 32px -33px rgba(0, 0, 0, .18);
+}
+
+.post::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(-70deg, #424242, transparent 50%);
+    opacity: 0.07;
+}
+
+.post-innerbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.post-img {
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    top: 0;
+    left: 0;
+    transition: transform 0.2s ease;
+}
+
+.post:nth-child(2n) .post-img {
+    left: initial;
+    right: 0;
+}
+
+.post:hover .post-img {
+    transform: scale(1.05) rotate(1deg);
+}
+
+.post:hover .post-bar {
+    width: 70px;
+}
+
+.post-textbox {
+    position: absolute;
+    top: 7%;
+    bottom: 7%;
+    left: 430px;
+    width: calc(100% - 470px);
+    font-size: 17px;
+}
+
+.post:nth-child(2n) .post-textbox {
+    left: initial;
+    right: 430px;
+}
+
+.post-textbox::before,
+.post-textbox::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #fff;
+    top: -20%;
+    left: -55px;
+    height: 140%;
+    width: 60px;
+    transform: rotate(8deg);
+}
+.post:nth-child(2n) .post-textbox::before {
+    display: none;
+}
+
+.post-textbox::after {
+    display: none;
+    left: initial;
+    right: -55px;
+}
+.post:nth-child(2n) .post-textbox::after {
+    display: block;
+}
+
+.post-textbox * {
+    position: relative;
+}
+
+.post-title {
+    font-family: 'Voces', 'Open Sans', arial, sans-serif;
+    font-size: 22px;
+}
+
+.post-subtitle {
+    font-family: 'Voces', 'Open Sans', arial, sans-serif;
+    color: #888;
+}
+
+.post-bar {
+    left: -2px;
+    width: 50px;
+    height: 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #424242;
+    transition: width 0.2s ease;
+}
+
+.post-description {
+    z-index: 10;
+    font-size: 15px;
+    color: #424242;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.post-options {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 410px;
+    width: calc(100% - 470px);
+    font-size: 17px;
+}
+
+#image-preview {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.post-textbox {
+    position: absolute;
+    top: 7%;
+    bottom: 7%;
+    left: 430px;
+    width: calc(100% - 470px);
+    font-size: 17px;
+}
+
+.post-details-btn {
+    position: absolute;
+    margin-top: 10px;
+    top: 80%;
+    font-size: 17px;
+}
+.container {
+    max-width: 800px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-title {
+    color: #343a40;
+}
+
+.card-subtitle {
+    color: #6c757d;
+}
+
+.card-text {
+    color: #495057;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.post-details-img {
+    max-width: 360px;
+    float: left;
+    margin-right: 20px;
+}
+
+.post-details-desc {
+    font-size: 16px;
+}
+
+.post-details-btn-back {
+    justify-content: end;
+    display: flex;
+}
+
+
